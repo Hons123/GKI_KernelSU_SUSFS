@@ -190,30 +190,30 @@ jobs:
         case "${{ inputs.ksu_variant }}" in
           WKSU)
             if [[ -n "${{ inputs.ksu_commit }}" ]]; then
-              curl -LSs "https://raw.githubusercontent.com/WildKernels/Wild_KSU/wild/kernel/setup.sh" | bash -s "${{ inputs.ksu_commit }}"
+              curl -LSs "https://raw.githubusercontent.com/Hons123/SukiSU-Ultra/refs/heads/main/kernel/setup.sh" | bash -s "${{ inputs.ksu_commit }}"
             else
-              curl -LSs "https://raw.githubusercontent.com/WildKernels/Wild_KSU/wild/kernel/setup.sh" | bash -s stable
+              curl -LSs "https://raw.githubusercontent.com/Hons123/SukiSU-Ultra/refs/heads/main/kernel/setup.sh" | bash -s stable
             fi
             ;;
           Next)
             if [[ -n "${{ inputs.ksu_commit }}" ]]; then
-              curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/stable/kernel/setup.sh" | bash -s "${{ inputs.ksu_commit }}"
+              curl -LSs "https://raw.githubusercontent.com/Hons123/SukiSU-Ultra/refs/heads/main/kernel/setup.sh" | bash -s "${{ inputs.ksu_commit }}"
             else
-              curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/dev/kernel/setup.sh" | bash -s dev
+              curl -LSs "https://raw.githubusercontent.com/Hons123/SukiSU-Ultra/refs/heads/main/kernel/setup.sh" | bash -s dev
             fi
             ;;
           KSU)
             if [[ -n "${{ inputs.ksu_commit }}" ]]; then
-              curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s "${{ inputs.ksu_commit }}"
+              curl -LSs "https://raw.githubusercontent.com/Hons123/SukiSU-Ultra/refs/heads/main/kernel/setup.sh" | bash -s "${{ inputs.ksu_commit }}"
             else
-              curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+              curl -LSs "https://raw.githubusercontent.com/Hons123/SukiSU-Ultra/refs/heads/main/kernel/setup.sh" | bash -s main
             fi
             ;;
           RKSU)
             if [[ -n "${{ inputs.ksu_commit }}" ]]; then
-              curl -LSs "https://raw.githubusercontent.com/rsuntk/KernelSU/main/kernel/setup.sh" | bash -s "${{ inputs.ksu_commit }}"
+              curl -LSs "https://raw.githubusercontent.com/Hons123/SukiSU-Ultra/refs/heads/main/kernel/setup.sh" | bash -s "${{ inputs.ksu_commit }}"
             else
-              curl -LSs "https://raw.githubusercontent.com/rsuntk/KernelSU/main/kernel/setup.sh" | bash -s main
+              curl -LSs "https://raw.githubusercontent.com/Hons123/SukiSU-Ultra/refs/heads/main/kernel/setup.sh" | bash -s main
             fi
             ;;
         esac
